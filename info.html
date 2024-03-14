@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przykładowa strona HTML</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #info {
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 50px;
+            text-align: center;
+            animation: fadein 2s ease-in;
+        }
+        
+        #sample-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            animation: fadein 2s ease-in;
+        }
+
+        #sample-text2 {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            animation: fadein 2s ease-in;
+        }
+        
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 id="info">INFO</h1>
+    <p id="sample-text"><br></br>
+<br> </br>
+<br> </br>
+<br>1. Zmieniony Tracklist</br>
+<br> </br>
+<br> </br>
+<br>2. Ent zawiera instrumental "Forever" znanej z Can u Be</br>
+</p>
+<p id="sample-text2"><br>(14.03.2024)</br>
+</p>
+</body>
+</html>
