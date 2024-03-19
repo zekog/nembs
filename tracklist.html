@@ -36,7 +36,7 @@ body { margin: 0; padding: 0; overflow-x: hidden; }
 color: #ffffff;
 text-align: center;
 font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
-font-size: 17px;
+font-size: 17px; /* Base font size */
 mix-blend-mode:normal;
 /* Wyśrodkowanie tekstu */
 position: absolute;
@@ -46,6 +46,13 @@ transform: translate(-50%, -50%);
 /* Dodaj wysokośc kontenera, w tym przyapdku, dopasowuje sie ona do zawartosci.*/
 height: auto;
 }
+
+/* Style for bold and slightly larger text */
+.bold-larger {
+  font-weight: bold;
+  font-size: 19px; /* Increase the font size */
+}
+
 /* Animacja Fade In */
 .fade-in {
 opacity: 0;
@@ -65,7 +72,9 @@ body{background-color:#000000;}
 </style>
 </head>
 <body>
-<div class="gpd-text fade-in" id="ij4d"><br>ML 24 Vol 2:<br><br data-cke-eol="1"><br><br><br><br>1. Truth<br><br>​​​​​​​2. Dissapointment<br><br>​​​​​​​3. So Sorry/Thanks, Bye<br><br>​​​​​​​4. Ent</div>
+<div class="gpd-text fade-in">
+    <br><strong class="bold-larger">ML 24 Vol 1:</strong><br><br data-cke-eol="1"><br><br>1. U (Interlude)<br><br>​​​​​​​2. U<br><br>​​​​​​​3. Idc<br><br><br><br><br><strong class="bold-larger">ML 24 Vol 2:</strong><br><br data-cke-eol="1"><br><br>1. Truth<br><br>​​​​​​​2. Dissapointment<br><br>​​​​​​​3. So Sorry/Thanks, Bye<br><br>​​​​​​​4. Ent
+</div>
 
 <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" onload="postJQ()"></script>
 <script async src="https://grapedrop.com/js/gpd.js?id=941871ee8356f83232d3"></script>
