@@ -12,39 +12,41 @@ body {
   width: 100%;
   max-width: 700px;
   margin: 0 auto;
-  margin-top: 20px; 
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
 }
 
 /* Nagłówek */
 #title {
-  font-size: 4rem;
+  font-size: 3.5rem;
   margin-top: 10px;
   display: flex;
   text-align: center;
-  font-family: "Archivo Black", sans-serif; 
+  font-family: "Archivo Black", sans-serif;
 }
 
 /* Kontener Obrazka */
 #image-container {
-  margin: 10px auto;
+  margin: 5px auto;
   text-align: center;
 }
 
 /* Obrazek okładki */
 #cover-image {
-  max-width: 75%; 
-  height: auto; 
+  max-width: 75%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Kontener odliczania*/
 #countdown-container {
-  margin: 40px auto;
+  margin: 20px auto;
   display: flex;
   flex-wrap: wrap; /* Zezwól na zawinięcie elementów */
-  justify-content: center; 
+  justify-content: center;
 }
 
 /* Blok odliczania */
@@ -52,7 +54,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px; 
+  margin: 20px;
 }
 
 /* Czcionka Cyfr odliczania */
@@ -64,13 +66,13 @@ body {
 
 /* Etykiety odliczania */
 .countdown-label {
-  font-size: 1rem; 
+  font-size: 1rem; 
   font-weight: normal;
 }
 
 /* Kontener linków */
 #links-container {
-  margin: 20px auto;
+  margin: 15px auto;
   display: flex;
   align-items: center;
 }
@@ -79,9 +81,9 @@ body {
 #links-container a {
   text-decoration: none;
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: normal;
-  margin: 0 30px; 
+  margin: 0 30px;
   transition: color 0.2s ease-in-out;
   
   &:hover {
@@ -89,23 +91,10 @@ body {
   }
 }
 
-/*  Dodatkowe style  */
+/* Dodatkowe style */
 
 #countdown-container {
   transition: opacity 0.5s ease-in-out;
-}
-
-#out-now-link {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-#countdown-container.hidden {
-  opacity: 0;
-}
-
-#out-now-link.visible {
-  opacity: 1;
 }
 
 #out-now-text {
@@ -114,7 +103,17 @@ body {
   color: #32CD32;
   text-align: center;
   margin: 20px auto;
-  display: none;
+  display: none; /* Początkowo ukryty */
+}
+
+.fadeIn {
+  -webkit-animation: fadeIn 1s ease-in forwards; /* Starsze przeglądarki */
+          animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 /* Media Queries */
