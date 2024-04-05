@@ -22,6 +22,7 @@ body {
 #title {
   font-size: 3rem;
   margin-top: 10px;
+  display: flex;
   text-align: center;
   font-family: "Archivo Black", sans-serif; 
 }
