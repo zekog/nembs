@@ -3,8 +3,8 @@ body {
   font-family: Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  color: #fff; /* Główny kolor tekstu */
-  background-color: #000; /* Kolor tła */
+  color: #fff;
+  background-color: #000;
 }
 
 /* Główny kontener */
@@ -12,18 +12,17 @@ body {
   width: 100%;
   max-width: 700px;
   margin: 0 auto;
-  margin-top: 60px;
+  margin-top: 20px; 
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: center; 
 }
 
 /* Nagłówek */
 #title {
-  font-size: 4.8rem; /* Powiększona wielkość czcionki */
+  font-size: 3rem;
   margin-top: 10px;
-  font-family: "Archivo Black", sans-serif; /* Zmieniony font */
+  font-family: "Archivo Black", sans-serif; 
 }
 
 /* Kontener Obrazka */
@@ -34,15 +33,16 @@ body {
 
 /* Obrazek okładki */
 #cover-image {
-  width: 400px;
-  height: 400px;
+  max-width: 90%; 
+  height: auto; 
 }
 
 /* Kontener odliczania*/
 #countdown-container {
-  margin: 20px auto;
+  margin: 40px auto;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap; /* Zezwól na zawinięcie elementów */
+  justify-content: center; 
 }
 
 /* Blok odliczania */
@@ -50,19 +50,19 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 45px;
+  margin: 20px; 
 }
 
 /* Czcionka Cyfr odliczania */
 .countdown-digit {
-  font-size: 5rem; /* Powiększenie czcionki */
+  font-size: 6rem;
   font-weight: normal;
-  color: #32CD32; /* Kolor limonkowy */
+  color: #32CD32;
 }
 
 /* Etykiety odliczania */
 .countdown-label {
-  font-size: 1.2rem; /* Powiększona czcionka */
+  font-size: 1rem; 
   font-weight: normal;
 }
 
@@ -70,34 +70,24 @@ body {
 #links-container {
   margin: 20px auto;
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
 /* Linki */
 #links-container a {
   text-decoration: none;
-  color: #fff; /* Biały kolor linków */
-  font-size: 1.2rem; /* Powiększona czcionka */
+  color: #fff;
+  font-size: 1rem;
   font-weight: normal;
-  margin: 0 30px;
-  
-  /* Dodatkowe style dla zmiany koloru po najechaniu */
+  margin: 0 30px; 
   transition: color 0.2s ease-in-out;
   
-  /* Kolor fioletowy po najechaniu */
   &:hover {
     color: #b803ff;
   }
 }
 
-/* Dodatkowe style dla wyśrodkowania w pionie */
-
-#main-container,
-#image-container,
-#countdown-container,
-#links-container {
-  align-items: center;
-}
+/*  Dodatkowe style  */
 
 #countdown-container {
   transition: opacity 0.5s ease-in-out;
@@ -117,10 +107,20 @@ body {
 }
 
 #out-now-text {
-  font-size: 5rem; /* Powiększenie czcionki */
+  font-size: 3rem;
   font-weight: normal;
-  color: #32CD32; /* Kolor limonkowy */
+  color: #32CD32;
   text-align: center;
   margin: 20px auto;
   display: none;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  #title {
+    font-size: 4rem;
+  }
+  .countdown-digit {
+    font-size: 4rem;
+  }
 }
