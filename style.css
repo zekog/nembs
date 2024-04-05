@@ -31,14 +31,15 @@ body {
 #image-container {
   margin: 5px auto;
   text-align: center;
+  display: block
 }
 
 /* Obrazek okładki */
 #cover-image {
   max-width: 75%;
   height: auto;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  margin: auto
 }
 
 /* Kontener odliczania*/
