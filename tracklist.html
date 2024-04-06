@@ -1,51 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
-  </head>
-<body style="background-color: #000000 !important;"> <div class="gpd-text fade-in">
-  <br><strong class="bold-larger">ML 24 Vol 1:</strong><br><br data-cke-eol="1"><br><br>1. U (Interlude)<br><br>​​​​​​​2. U<br><br>​​​​​​​3. Idc<br><br><br><br><br><strong class="bold-larger">ML 24 Vol 2:</strong><br><br data-cke-eol="1"><br><br>1. Truth<br><br>​​​​​​​2. Dissapointment<br><br>​​​​​​​3. NOT SORRY<br><br>​​​​​​​4. Ent
-</div>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ML 24 - Vol. 1 & 2</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000000 !important;
+      font-family: sans-serif;
+      display: flex;          
+      align-items: center;    
+      justify-content: center; 
+      height: 100vh;        
+    }
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;  
+      opacity: 0;          /* Początkowo ukryj element */
+      animation: fadeIn 1s ease-out forwards; 
+    }
 
-<style>
-body { margin: 0; background-color: #000000 !important; } /* wymuszenie stylów */
+    h1 {
+      color: #ffffff;
+      font-size: 34px;
+      font-weight: bold;
+      margin-top: 0;
+    }
 
-.gpd-text { 
-  color: #ffffff;
-  text-align: center;
-  font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
-  font-size: 17px;
-  mix-blend-mode:normal;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: auto;
-  white-space: nowrap; /* Zapobiega zawijaniu tekstu */
-  display: none; /* Początkowo ukryj element */
-}
+    h2 {
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: bold; 
+      margin-top: 10px;
+    }
 
-.bold-larger {
-  font-weight: bold;
-  font-size: 19px; 
-}
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
 
-.fade-in {
-  opacity: 0;
-  animation: fadeIn 1s ease-out forwards;
-}
+    li {
+      color: #ffffff;
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
 
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-</style>
+    @media (max-width: 400px) {
+      h1 {
+        font-size: 30px;
+      }
+      h2 {
+        font-size: 16px;
+      }
+      li {
+        font-size: 14px;
+      }
+    }
 
-<script>
-  // Odczekanie na pełne załadowanie strony
-  window.addEventListener("load", function() {
-    const textElement = document.querySelector(".fade-in");
-    textElement.style.display = "block"; // Pokaż element
-  });
-</script>
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container"> 
+    <h1>ML 24</h1> 
+    <br> </br>
+    <h2>Vol. 1</h2>
+    <br> </br>
+    <ul> 
+      <li>U (Interlude)</li> 
+      <li>U</li> 
+      <li>Idc</li> 
+      <br> </br>
+    </ul> 
+    <h2>Vol. 2</h2>
+    <br> </br>
+    <ul> 
+      <li>Truth</li> 
+      <li>Dissapointment</li> 
+      <li>NOT SORRY</li>
+      <li>Ent</li> 
+    </ul> 
+  </div> 
 </body>
 </html>
