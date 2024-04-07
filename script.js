@@ -1,4 +1,4 @@
-const targetDate = new Date(2024, 3, 7, 11, 30, 00); // Ustaw datę premiery
+const targetDate = new Date(2024, 3, 7, 12, 00, 00); // Ustaw datę premiery
 const countdownContainer = document.getElementById("countdown-container");
 const outNowText = document.getElementById("out-now-text");
 const coverImage = document.getElementById("cover-image");
