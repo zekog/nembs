@@ -78,18 +78,44 @@ body {
   align-items: center;
 }
 
-/* Linki */
-#links-container a {
+#links-container .buttonanim { 
+  padding: 12.5px 20px;
+  border: 0;
+  margin: 10px;
+  border-radius: 100px;
+  background-color: #32b132;
+  color: #ffffff;
+  font-weight: Bold;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  display: flex; /* Ustawienie jako flex container */
+  align-items: center; /* Wyśrodkowanie tekstu */
+  justify-content: center; /* Wyśrodkowanie tekstu */
+}
+
+#links-container .buttonanim:hover { 
+  background-color: #709c29;
+  box-shadow: 0 0 20px #6eb32e;
+  transform: scale(1.1);
+}
+
+#links-container .buttonanim:active { 
+  background-color: #297247;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
+}
+
+/* Pełna szerokość linków */
+#links-container a { 
   text-decoration: none;
   color: #fff;
   font-size: 1.2rem;
   font-weight: normal;
-  margin: 0 30px;
-  transition: color 0.2s ease-in-out;
-  
-  &:hover {
-    color: #b803ff;
-  }
+  display: block; /* Link zajmie cały blok rodzica */
+  width: 100%;     /* Pełna szerokość */
+  height: 100%;    /* Pełna wysokość */
 }
 
 /* Dodatkowe style */
@@ -126,3 +152,5 @@ body {
     font-size: 4rem;
   }
 }
+
+
