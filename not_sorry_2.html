@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odtwarzacz muzyki</title>
+    <style>
+        body {
+            background-color: black; /* Ustaw czarne tło */
+            display: flex; /* Ustaw układ flexbox */
+            flex-direction: column; /* Umieść elementy jeden pod drugim */
+            align-items: center; /* Wyśrodkuj elementy w poziomie */
+            height: 100vh; /* Zajmij całą wysokość okna przeglądarki */
+            margin: 0; /* Usuń domyślne marginesy */
+        }
+
+        h1 {
+            color: white; /* Ustaw biały kolor tekstu */
+            margin-bottom: 20px; /* Dodaj margines dolny */
+        }
+
+        audio {
+            width: 300px; /* Ustaw szerokość odtwarzacza */
+            margin: 0 auto; /* Wyśrodkuj odtwarzacz w pionie */
+            display: block; /* Wyświetl odtwarzacz jako blokowy */
+            margin-left: auto;
+            margin-right: auto; /* Wyśrodkuj odtwarzacz w poziomie */
+        }
+    </style>
+</head>
+<body>
+    <h1>NOT SORRY PT 2</h1>
+    <audio preload="auto" controls>
+        <source src="https://files.catbox.moe/36wpf7.mp3" type="audio/mp3">
+    </audio>
+</body>
+</html>

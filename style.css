@@ -1,0 +1,156 @@
+/* Ustawienia globalne */
+body {
+  font-family: "Helvetica", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #000;
+}
+
+/* Główny kontener */
+#main-container {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Nagłówek */
+#title {
+  font-size: 3.5rem;
+  margin-top: 10px;
+  display: flex;
+  text-align: center;
+  font-family: "Salsa", cursive;
+}
+
+/* Kontener Obrazka */
+#image-container {
+  margin: 5px auto;
+  text-align: center;
+  display: block
+}
+
+/* Obrazek okładki */
+#cover-image {
+  max-width: 75%;
+  height: auto;
+  display: block;
+  margin: auto
+}
+
+/* Kontener odliczania*/
+#countdown-container {
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap; /* Zezwól na zawinięcie elementów */
+  justify-content: center;
+}
+
+/* Blok odliczania */
+.countdown-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+/* Czcionka Cyfr odliczania */
+.countdown-digit {
+  font-size: 6rem;
+  font-weight: normal;
+  color: #007bff;
+}
+
+/* Etykiety odliczania */
+.countdown-label {
+  font-size: 1rem; 
+  font-weight: normal;
+}
+
+/* Kontener linków */
+#links-container {
+  margin: 15px auto;
+  display: flex;
+  align-items: center;
+}
+
+#links-container .buttonanim { 
+  padding: 12.5px 20px;
+  border: 0;
+  margin: 10px;
+  border-radius: 100px;
+  background-color: #007bff;
+  color: #ffffff;
+  font-weight: Bold;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  display: flex; /* Ustawienie jako flex container */
+  align-items: center; /* Wyśrodkowanie tekstu */
+  justify-content: center; /* Wyśrodkowanie tekstu */
+}
+
+#links-container .buttonanim:hover { 
+  background-color: #0056b3;
+  box-shadow: 0 0 20px #1616db;
+  transform: scale(1.1);
+}
+
+#links-container .buttonanim:active { 
+  background-color: #003e80;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
+}
+
+/* Pełna szerokość linków */
+#links-container a { 
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: normal;
+  display: block; /* Link zajmie cały blok rodzica */
+  width: 100%;     /* Pełna szerokość */
+  height: 100%;    /* Pełna wysokość */
+}
+
+/* Dodatkowe style */
+
+#countdown-container {
+  transition: opacity 0.5s ease-in-out;
+}
+
+#out-now-text {
+  font-size: 3rem;
+  font-weight: normal;
+  color: #ffffff;
+  text-align: center;
+  margin: 20px auto;
+  display: none; /* Początkowo ukryty */
+}
+
+.fadeIn {
+  -webkit-animation: fadeIn 1s ease-in forwards; /* Starsze przeglądarki */
+          animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  #title {
+    font-size: 4rem;
+  }
+  .countdown-digit {
+    font-size: 4rem;
+  }
+}
+
+
